@@ -1,0 +1,863 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB15832146B93306F4EE49B0 /* Pods_soundchattvTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAF6DA016C20F5155CA4596 /* Pods_soundchattvTests.framework */; };
+		BEB33565003EDC20C16A95F3 /* Pods_soundchattv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D28C55AC1437323BA597A63B /* Pods_soundchattv.framework */; };
+		DBB57A880BD7436852B58AB9 /* Pods_soundchattv_soundchattvUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 386209D2BDB951A2465C58E8 /* Pods_soundchattv_soundchattvUITests.framework */; };
+		E10838792A175AB200834AEE /* LiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10838782A175AB200834AEE /* LiveView.swift */; };
+		E108387B2A179AF800834AEE /* InterviewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E108387A2A179AF800834AEE /* InterviewsView.swift */; };
+		E108387D2A17B0C300834AEE /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E108387C2A17B0C300834AEE /* VideoPlayerView.swift */; };
+		E133E2B02A2F0CAF0027DF5A /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E133E2AF2A2F0CAF0027DF5A /* UserDefault.swift */; };
+		E133E2B22A2F13320027DF5A /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E133E2B12A2F13320027DF5A /* SettingView.swift */; };
+		E133E2B42A2F13990027DF5A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E133E2B32A2F13990027DF5A /* ProfileView.swift */; };
+		E1431D612A13B4CE005602AB /* TimelineResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1431D602A13B4CE005602AB /* TimelineResponse.swift */; };
+		E1431D632A14A08C005602AB /* HomesliderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1431D622A14A08C005602AB /* HomesliderResponse.swift */; };
+		E146C94B29FF809200AA3327 /* soundchattvApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E146C94A29FF809200AA3327 /* soundchattvApp.swift */; };
+		E146C94D29FF809200AA3327 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E146C94C29FF809200AA3327 /* ContentView.swift */; };
+		E146C94F29FF809400AA3327 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E146C94E29FF809400AA3327 /* Assets.xcassets */; };
+		E146C95229FF809400AA3327 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E146C95129FF809400AA3327 /* Preview Assets.xcassets */; };
+		E146C95429FF809400AA3327 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E146C95329FF809400AA3327 /* Persistence.swift */; };
+		E146C95729FF809400AA3327 /* soundchattv.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E146C95529FF809400AA3327 /* soundchattv.xcdatamodeld */; };
+		E146C96129FF809400AA3327 /* soundchattvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E146C96029FF809400AA3327 /* soundchattvTests.swift */; };
+		E146C96B29FF809400AA3327 /* soundchattvUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E146C96A29FF809400AA3327 /* soundchattvUITests.swift */; };
+		E146C96D29FF809400AA3327 /* soundchattvUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E146C96C29FF809400AA3327 /* soundchattvUITestsLaunchTests.swift */; };
+		E172F6032A262619006A428F /* RecapTVResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E172F6022A262619006A428F /* RecapTVResponse.swift */; };
+		E172F6052A27687B006A428F /* TimelineStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E172F6042A27687B006A428F /* TimelineStoryView.swift */; };
+		E188C3E22A1B4EA100A752E0 /* InterviewResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E188C3E12A1B4EA100A752E0 /* InterviewResponse.swift */; };
+		E188C3E42A1C963C00A752E0 /* RecapTVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E188C3E32A1C963C00A752E0 /* RecapTVView.swift */; };
+		E191FC602A14C16700002CF3 /* ScheduleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191FC5F2A14C16700002CF3 /* ScheduleResponse.swift */; };
+		E191FC622A14E30C00002CF3 /* GetDetroitTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191FC612A14E30C00002CF3 /* GetDetroitTime.swift */; };
+		E194D14F2A1E4963003B1715 /* InterviewDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E194D14E2A1E4963003B1715 /* InterviewDetailView.swift */; };
+		E194D1512A1F334D003B1715 /* YoutubePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E194D1502A1F334D003B1715 /* YoutubePlayerView.swift */; };
+		E198C1B32A12506600CA655C /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E198C1B22A12506600CA655C /* AsyncImage.swift */; };
+		E198C1B62A12573E00CA655C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E198C1B52A12573E00CA655C /* Constants.swift */; };
+		E1C2D7E92A2A11DE001A3DCA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2D7E82A2A11DE001A3DCA /* LoginView.swift */; };
+		E1C2D7EB2A2DAAF2001A3DCA /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2D7EA2A2DAAF2001A3DCA /* LoginResponse.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E146C95D29FF809400AA3327 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E146C93F29FF809200AA3327 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E146C94629FF809200AA3327;
+			remoteInfo = soundchattv;
+		};
+		E146C96729FF809400AA3327 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E146C93F29FF809200AA3327 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E146C94629FF809200AA3327;
+			remoteInfo = soundchattv;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2AAF6DA016C20F5155CA4596 /* Pods_soundchattvTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_soundchattvTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F4FC075AF17C642B7E14F0 /* Pods-soundchattv-soundchattvUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soundchattv-soundchattvUITests.debug.xcconfig"; path = "Target Support Files/Pods-soundchattv-soundchattvUITests/Pods-soundchattv-soundchattvUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		386209D2BDB951A2465C58E8 /* Pods_soundchattv_soundchattvUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_soundchattv_soundchattvUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5839532CB50C2CD185D5148A /* Pods-soundchattvTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soundchattvTests.release.xcconfig"; path = "Target Support Files/Pods-soundchattvTests/Pods-soundchattvTests.release.xcconfig"; sourceTree = "<group>"; };
+		738CCCA7E5609610B1585445 /* Pods-soundchattvTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soundchattvTests.debug.xcconfig"; path = "Target Support Files/Pods-soundchattvTests/Pods-soundchattvTests.debug.xcconfig"; sourceTree = "<group>"; };
+		79D826D0138996D5FFA78281 /* Pods-soundchattv-soundchattvUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soundchattv-soundchattvUITests.release.xcconfig"; path = "Target Support Files/Pods-soundchattv-soundchattvUITests/Pods-soundchattv-soundchattvUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D28C55AC1437323BA597A63B /* Pods_soundchattv.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_soundchattv.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5BB1C1553D1921F3E78F6AE /* Pods-soundchattv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soundchattv.debug.xcconfig"; path = "Target Support Files/Pods-soundchattv/Pods-soundchattv.debug.xcconfig"; sourceTree = "<group>"; };
+		E10838782A175AB200834AEE /* LiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveView.swift; sourceTree = "<group>"; };
+		E108387A2A179AF800834AEE /* InterviewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewsView.swift; sourceTree = "<group>"; };
+		E108387C2A17B0C300834AEE /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		E133E2AF2A2F0CAF0027DF5A /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		E133E2B12A2F13320027DF5A /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		E133E2B32A2F13990027DF5A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E1431D602A13B4CE005602AB /* TimelineResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineResponse.swift; sourceTree = "<group>"; };
+		E1431D622A14A08C005602AB /* HomesliderResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomesliderResponse.swift; sourceTree = "<group>"; };
+		E146C94729FF809200AA3327 /* soundchattv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = soundchattv.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E146C94A29FF809200AA3327 /* soundchattvApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soundchattvApp.swift; sourceTree = "<group>"; };
+		E146C94C29FF809200AA3327 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E146C94E29FF809400AA3327 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E146C95129FF809400AA3327 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E146C95329FF809400AA3327 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		E146C95629FF809400AA3327 /* soundchattv.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = soundchattv.xcdatamodel; sourceTree = "<group>"; };
+		E146C95C29FF809400AA3327 /* soundchattvTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = soundchattvTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E146C96029FF809400AA3327 /* soundchattvTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soundchattvTests.swift; sourceTree = "<group>"; };
+		E146C96629FF809400AA3327 /* soundchattvUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = soundchattvUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E146C96A29FF809400AA3327 /* soundchattvUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soundchattvUITests.swift; sourceTree = "<group>"; };
+		E146C96C29FF809400AA3327 /* soundchattvUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soundchattvUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E172F6022A262619006A428F /* RecapTVResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecapTVResponse.swift; sourceTree = "<group>"; };
+		E172F6042A27687B006A428F /* TimelineStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineStoryView.swift; sourceTree = "<group>"; };
+		E188C3E12A1B4EA100A752E0 /* InterviewResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewResponse.swift; sourceTree = "<group>"; };
+		E188C3E32A1C963C00A752E0 /* RecapTVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecapTVView.swift; sourceTree = "<group>"; };
+		E191FC5F2A14C16700002CF3 /* ScheduleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleResponse.swift; sourceTree = "<group>"; };
+		E191FC612A14E30C00002CF3 /* GetDetroitTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDetroitTime.swift; sourceTree = "<group>"; };
+		E194D14E2A1E4963003B1715 /* InterviewDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewDetailView.swift; sourceTree = "<group>"; };
+		E194D1502A1F334D003B1715 /* YoutubePlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubePlayerView.swift; sourceTree = "<group>"; };
+		E198C1B22A12506600CA655C /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		E198C1B52A12573E00CA655C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E1C2D7E82A2A11DE001A3DCA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E1C2D7EA2A2DAAF2001A3DCA /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		EE064D54D57E152DFB51D781 /* Pods-soundchattv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soundchattv.release.xcconfig"; path = "Target Support Files/Pods-soundchattv/Pods-soundchattv.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E146C94429FF809200AA3327 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB33565003EDC20C16A95F3 /* Pods_soundchattv.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E146C95929FF809400AA3327 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB15832146B93306F4EE49B0 /* Pods_soundchattvTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E146C96329FF809400AA3327 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBB57A880BD7436852B58AB9 /* Pods_soundchattv_soundchattvUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FEC10DE4287D6A54A6BAB45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D28C55AC1437323BA597A63B /* Pods_soundchattv.framework */,
+				386209D2BDB951A2465C58E8 /* Pods_soundchattv_soundchattvUITests.framework */,
+				2AAF6DA016C20F5155CA4596 /* Pods_soundchattvTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51F9EB81AFBC99E523895B1D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5BB1C1553D1921F3E78F6AE /* Pods-soundchattv.debug.xcconfig */,
+				EE064D54D57E152DFB51D781 /* Pods-soundchattv.release.xcconfig */,
+				32F4FC075AF17C642B7E14F0 /* Pods-soundchattv-soundchattvUITests.debug.xcconfig */,
+				79D826D0138996D5FFA78281 /* Pods-soundchattv-soundchattvUITests.release.xcconfig */,
+				738CCCA7E5609610B1585445 /* Pods-soundchattvTests.debug.xcconfig */,
+				5839532CB50C2CD185D5148A /* Pods-soundchattvTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E1431D5F2A13B4BE005602AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E1431D602A13B4CE005602AB /* TimelineResponse.swift */,
+				E191FC5F2A14C16700002CF3 /* ScheduleResponse.swift */,
+				E1431D622A14A08C005602AB /* HomesliderResponse.swift */,
+				E188C3E12A1B4EA100A752E0 /* InterviewResponse.swift */,
+				E172F6022A262619006A428F /* RecapTVResponse.swift */,
+				E1C2D7EA2A2DAAF2001A3DCA /* LoginResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E146C93E29FF809200AA3327 = {
+			isa = PBXGroup;
+			children = (
+				E146C94929FF809200AA3327 /* soundchattv */,
+				E146C95F29FF809400AA3327 /* soundchattvTests */,
+				E146C96929FF809400AA3327 /* soundchattvUITests */,
+				E146C94829FF809200AA3327 /* Products */,
+				51F9EB81AFBC99E523895B1D /* Pods */,
+				4FEC10DE4287D6A54A6BAB45 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E146C94829FF809200AA3327 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E146C94729FF809200AA3327 /* soundchattv.app */,
+				E146C95C29FF809400AA3327 /* soundchattvTests.xctest */,
+				E146C96629FF809400AA3327 /* soundchattvUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E146C94929FF809200AA3327 /* soundchattv */ = {
+			isa = PBXGroup;
+			children = (
+				E146C94A29FF809200AA3327 /* soundchattvApp.swift */,
+				E146C94C29FF809200AA3327 /* ContentView.swift */,
+				E1811C022A16567700F86C93 /* Views */,
+				E1431D5F2A13B4BE005602AB /* Models */,
+				E198C1B42A12572D00CA655C /* Globals */,
+				E198C1B12A12504300CA655C /* Functions */,
+				E146C94E29FF809400AA3327 /* Assets.xcassets */,
+				E146C95329FF809400AA3327 /* Persistence.swift */,
+				E146C95529FF809400AA3327 /* soundchattv.xcdatamodeld */,
+				E146C95029FF809400AA3327 /* Preview Content */,
+			);
+			path = soundchattv;
+			sourceTree = "<group>";
+		};
+		E146C95029FF809400AA3327 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E146C95129FF809400AA3327 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E146C95F29FF809400AA3327 /* soundchattvTests */ = {
+			isa = PBXGroup;
+			children = (
+				E146C96029FF809400AA3327 /* soundchattvTests.swift */,
+			);
+			path = soundchattvTests;
+			sourceTree = "<group>";
+		};
+		E146C96929FF809400AA3327 /* soundchattvUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E146C96A29FF809400AA3327 /* soundchattvUITests.swift */,
+				E146C96C29FF809400AA3327 /* soundchattvUITestsLaunchTests.swift */,
+			);
+			path = soundchattvUITests;
+			sourceTree = "<group>";
+		};
+		E1811C022A16567700F86C93 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E10838782A175AB200834AEE /* LiveView.swift */,
+				E108387A2A179AF800834AEE /* InterviewsView.swift */,
+				E108387C2A17B0C300834AEE /* VideoPlayerView.swift */,
+				E194D14E2A1E4963003B1715 /* InterviewDetailView.swift */,
+				E194D1502A1F334D003B1715 /* YoutubePlayerView.swift */,
+				E188C3E32A1C963C00A752E0 /* RecapTVView.swift */,
+				E172F6042A27687B006A428F /* TimelineStoryView.swift */,
+				E1C2D7E82A2A11DE001A3DCA /* LoginView.swift */,
+				E133E2B32A2F13990027DF5A /* ProfileView.swift */,
+				E133E2B12A2F13320027DF5A /* SettingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E198C1B12A12504300CA655C /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				E198C1B22A12506600CA655C /* AsyncImage.swift */,
+				E133E2AF2A2F0CAF0027DF5A /* UserDefault.swift */,
+				E191FC612A14E30C00002CF3 /* GetDetroitTime.swift */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
+		E198C1B42A12572D00CA655C /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				E198C1B52A12573E00CA655C /* Constants.swift */,
+			);
+			path = Globals;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E146C94629FF809200AA3327 /* soundchattv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E146C97029FF809400AA3327 /* Build configuration list for PBXNativeTarget "soundchattv" */;
+			buildPhases = (
+				D2B042D8ACC2BE50CA59FF0A /* [CP] Check Pods Manifest.lock */,
+				E146C94329FF809200AA3327 /* Sources */,
+				E146C94429FF809200AA3327 /* Frameworks */,
+				E146C94529FF809200AA3327 /* Resources */,
+				DB87A15EA13965D816A2AE0A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = soundchattv;
+			productName = soundchattv;
+			productReference = E146C94729FF809200AA3327 /* soundchattv.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E146C95B29FF809400AA3327 /* soundchattvTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E146C97329FF809400AA3327 /* Build configuration list for PBXNativeTarget "soundchattvTests" */;
+			buildPhases = (
+				DF3744828FBFB4B95A3A6C8F /* [CP] Check Pods Manifest.lock */,
+				E146C95829FF809400AA3327 /* Sources */,
+				E146C95929FF809400AA3327 /* Frameworks */,
+				E146C95A29FF809400AA3327 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E146C95E29FF809400AA3327 /* PBXTargetDependency */,
+			);
+			name = soundchattvTests;
+			productName = soundchattvTests;
+			productReference = E146C95C29FF809400AA3327 /* soundchattvTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E146C96529FF809400AA3327 /* soundchattvUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E146C97629FF809400AA3327 /* Build configuration list for PBXNativeTarget "soundchattvUITests" */;
+			buildPhases = (
+				60007EFE5025A8ACA1E0CDE4 /* [CP] Check Pods Manifest.lock */,
+				E146C96229FF809400AA3327 /* Sources */,
+				E146C96329FF809400AA3327 /* Frameworks */,
+				E146C96429FF809400AA3327 /* Resources */,
+				8977B6A0EA51E03AA7C49734 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E146C96829FF809400AA3327 /* PBXTargetDependency */,
+			);
+			name = soundchattvUITests;
+			productName = soundchattvUITests;
+			productReference = E146C96629FF809400AA3327 /* soundchattvUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E146C93F29FF809200AA3327 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					E146C94629FF809200AA3327 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					E146C95B29FF809400AA3327 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = E146C94629FF809200AA3327;
+					};
+					E146C96529FF809400AA3327 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = E146C94629FF809200AA3327;
+					};
+				};
+			};
+			buildConfigurationList = E146C94229FF809200AA3327 /* Build configuration list for PBXProject "soundchattv" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E146C93E29FF809200AA3327;
+			productRefGroup = E146C94829FF809200AA3327 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E146C94629FF809200AA3327 /* soundchattv */,
+				E146C95B29FF809400AA3327 /* soundchattvTests */,
+				E146C96529FF809400AA3327 /* soundchattvUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E146C94529FF809200AA3327 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E146C95229FF809400AA3327 /* Preview Assets.xcassets in Resources */,
+				E146C94F29FF809400AA3327 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E146C95A29FF809400AA3327 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E146C96429FF809400AA3327 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60007EFE5025A8ACA1E0CDE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-soundchattv-soundchattvUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8977B6A0EA51E03AA7C49734 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-soundchattv-soundchattvUITests/Pods-soundchattv-soundchattvUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-soundchattv-soundchattvUITests/Pods-soundchattv-soundchattvUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-soundchattv-soundchattvUITests/Pods-soundchattv-soundchattvUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2B042D8ACC2BE50CA59FF0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-soundchattv-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB87A15EA13965D816A2AE0A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-soundchattv/Pods-soundchattv-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-soundchattv/Pods-soundchattv-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-soundchattv/Pods-soundchattv-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF3744828FBFB4B95A3A6C8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-soundchattvTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E146C94329FF809200AA3327 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E194D14F2A1E4963003B1715 /* InterviewDetailView.swift in Sources */,
+				E188C3E42A1C963C00A752E0 /* RecapTVView.swift in Sources */,
+				E172F6032A262619006A428F /* RecapTVResponse.swift in Sources */,
+				E198C1B32A12506600CA655C /* AsyncImage.swift in Sources */,
+				E133E2B22A2F13320027DF5A /* SettingView.swift in Sources */,
+				E146C95429FF809400AA3327 /* Persistence.swift in Sources */,
+				E108387B2A179AF800834AEE /* InterviewsView.swift in Sources */,
+				E146C94D29FF809200AA3327 /* ContentView.swift in Sources */,
+				E146C94B29FF809200AA3327 /* soundchattvApp.swift in Sources */,
+				E1431D612A13B4CE005602AB /* TimelineResponse.swift in Sources */,
+				E191FC622A14E30C00002CF3 /* GetDetroitTime.swift in Sources */,
+				E10838792A175AB200834AEE /* LiveView.swift in Sources */,
+				E191FC602A14C16700002CF3 /* ScheduleResponse.swift in Sources */,
+				E172F6052A27687B006A428F /* TimelineStoryView.swift in Sources */,
+				E146C95729FF809400AA3327 /* soundchattv.xcdatamodeld in Sources */,
+				E133E2B02A2F0CAF0027DF5A /* UserDefault.swift in Sources */,
+				E133E2B42A2F13990027DF5A /* ProfileView.swift in Sources */,
+				E188C3E22A1B4EA100A752E0 /* InterviewResponse.swift in Sources */,
+				E1431D632A14A08C005602AB /* HomesliderResponse.swift in Sources */,
+				E194D1512A1F334D003B1715 /* YoutubePlayerView.swift in Sources */,
+				E108387D2A17B0C300834AEE /* VideoPlayerView.swift in Sources */,
+				E1C2D7E92A2A11DE001A3DCA /* LoginView.swift in Sources */,
+				E198C1B62A12573E00CA655C /* Constants.swift in Sources */,
+				E1C2D7EB2A2DAAF2001A3DCA /* LoginResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E146C95829FF809400AA3327 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E146C96129FF809400AA3327 /* soundchattvTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E146C96229FF809400AA3327 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E146C96D29FF809400AA3327 /* soundchattvUITestsLaunchTests.swift in Sources */,
+				E146C96B29FF809400AA3327 /* soundchattvUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E146C95E29FF809400AA3327 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E146C94629FF809200AA3327 /* soundchattv */;
+			targetProxy = E146C95D29FF809400AA3327 /* PBXContainerItemProxy */;
+		};
+		E146C96829FF809400AA3327 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E146C94629FF809200AA3327 /* soundchattv */;
+			targetProxy = E146C96729FF809400AA3327 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E146C96E29FF809400AA3327 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 16.1;
+			};
+			name = Debug;
+		};
+		E146C96F29FF809400AA3327 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 16.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E146C97129FF809400AA3327 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5BB1C1553D1921F3E78F6AE /* Pods-soundchattv.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"soundchattv/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.soundchattv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		E146C97229FF809400AA3327 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE064D54D57E152DFB51D781 /* Pods-soundchattv.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"soundchattv/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.soundchattv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		E146C97429FF809400AA3327 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 738CCCA7E5609610B1585445 /* Pods-soundchattvTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.soundchattvTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/soundchattv.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/soundchattv";
+				TVOS_DEPLOYMENT_TARGET = 16.1;
+			};
+			name = Debug;
+		};
+		E146C97529FF809400AA3327 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5839532CB50C2CD185D5148A /* Pods-soundchattvTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.soundchattvTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/soundchattv.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/soundchattv";
+				TVOS_DEPLOYMENT_TARGET = 16.1;
+			};
+			name = Release;
+		};
+		E146C97729FF809400AA3327 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32F4FC075AF17C642B7E14F0 /* Pods-soundchattv-soundchattvUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.soundchattvUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = soundchattv;
+			};
+			name = Debug;
+		};
+		E146C97829FF809400AA3327 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79D826D0138996D5FFA78281 /* Pods-soundchattv-soundchattvUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.soundchattvUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = soundchattv;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E146C94229FF809200AA3327 /* Build configuration list for PBXProject "soundchattv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E146C96E29FF809400AA3327 /* Debug */,
+				E146C96F29FF809400AA3327 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E146C97029FF809400AA3327 /* Build configuration list for PBXNativeTarget "soundchattv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E146C97129FF809400AA3327 /* Debug */,
+				E146C97229FF809400AA3327 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E146C97329FF809400AA3327 /* Build configuration list for PBXNativeTarget "soundchattvTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E146C97429FF809400AA3327 /* Debug */,
+				E146C97529FF809400AA3327 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E146C97629FF809400AA3327 /* Build configuration list for PBXNativeTarget "soundchattvUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E146C97729FF809400AA3327 /* Debug */,
+				E146C97829FF809400AA3327 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E146C95529FF809400AA3327 /* soundchattv.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E146C95629FF809400AA3327 /* soundchattv.xcdatamodel */,
+			);
+			currentVersion = E146C95629FF809400AA3327 /* soundchattv.xcdatamodel */;
+			path = soundchattv.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E146C93F29FF809200AA3327 /* Project object */;
+}

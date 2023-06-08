@@ -1,0 +1,6 @@
+framework module Pods_soundchattv_soundchattvUITests {
+  umbrella header "Pods-soundchattv-soundchattvUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
