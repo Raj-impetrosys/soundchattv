@@ -8,15 +8,24 @@
 import SwiftUI
 import Alamofire
 import Introspect
+//import TVOSToast
 
 struct LoginView: View {
+    @Namespace private var namespace
     @State private var username: String = ""
     @State private var password: String = ""
     @State private var isChecked: Bool = false
+    @State private var showToast: Bool = false
+    @State private var message: String = ""
+//    @State private var isFocused: Bool = false
+    @FocusState private var isFocused: Bool
+    @FocusState private var isUserNameFocused: Bool
+    @FocusState private var isPasswordFocused: Bool
     @EnvironmentObject private var globals: GlobalString
+        
     var body: some View {
         VStack{
-            Spacer().frame(height: 200)
+//            Spacer().frame(height: 200)
             Button{}label: {
                 Text("Demo").frame(maxWidth: .infinity)
             }
@@ -33,7 +42,10 @@ struct LoginView: View {
                     
                     HStack(spacing: 25){
                         Image(systemName: "person.circle.fill").resizable().frame(width: 100, height: 100).foregroundColor(.gray)
-                        TextField("Username/Email", text: $username)
+                        TextField("Username/Email", text: $username).focused($isUserNameFocused)
+//                            .focusable(true) { isFocused in
+//                            self.isFocused = false
+//                        }
 //                            .introspectTextField { textField in
 //                                textField.becomeFirstResponder()
 //                                print(textField.isFocused)
@@ -46,10 +58,11 @@ struct LoginView: View {
                         RoundedRectangle(cornerRadius: 100)
                             .stroke(Color.white, lineWidth: 5)
                     )
+//                    .focusable(true).focused($isUserNameFocused)
                     
                     HStack(spacing: 25){
                         Image(systemName: "lock.circle.fill").resizable().frame(width: 100, height: 100).foregroundColor(.gray)
-                        TextField("Password", text: $password)
+                        TextField("Password", text: $password).focused($isPasswordFocused)
                         Image(systemName: "eye").resizable().frame(width: 70, height: 40).foregroundColor(.gray)
                     }
                     .frame(width: width * 0.4)
@@ -59,13 +72,17 @@ struct LoginView: View {
                         RoundedRectangle(cornerRadius: 100)
                             .stroke(Color.white, lineWidth: 5)
                     )
+//                    .focusable(true)
+                    
                     HStack{
                         Toggle(isOn: $isChecked) {
                                         Text("Remember Me")
                                     }
                                     .toggleStyle(CheckboxToggleStyle())
-//                        Spacer()
-                }
+                        Spacer()
+                    }.focusable(true).onTapGesture {
+                        isChecked.toggle()
+                    }
                     
                     Button{
                         login(userName: username, password: password, globals: globals)
@@ -75,7 +92,7 @@ struct LoginView: View {
                     VStack{
                         Rectangle().fill(.white).frame(width: width * 0.35, height: 5).padding()
                         
-                        Text("To create account please use the App. Download App from Playstore and Appstore.")
+                        Text("To create account please use the App. Download App from Playstore and Appstore.").multilineTextAlignment(.center)
                     }
                 }
                 
@@ -85,12 +102,55 @@ struct LoginView: View {
                     Spacer()
                     Image("qr_code").resizable().frame(width: width * 0.3, height: width * 0.3)
                     Spacer()
-                    Text("To download the App scan QR Code through your phone camera.")
+                    Text("To download the App scan QR Code through your phone camera.").multilineTextAlignment(.center)
                     Spacer().frame(height: 0)
                 }
             }
+        }.alert(isPresented: $showToast) {
+            Alert(title: Text(message))
         }
+//        .overlay {
+//            ToastView(isPresented: $showToast, message: "Login Successfully")
+//        }
+//        .focused($isFocused)
+//        .focusScope(namespace)
+//            .focusable(true) { isFocused in
+//                if(isFocused){
+//                    self.isUserNameFocused.toggle()
+//                    self.isFocused = false
+//                }
+//            }.onAppear(){
+//                isFocused = true
+//            }
     }
+    
+    func login(userName: String, password: String, globals: GlobalString){
+        AF.request("\(baseUrl)signin", method: .post, parameters: ["mobileno": userName,"password": password], encoder: JSONParameterEncoder.json)
+            .responseDecodable(of: LoginResponse.self) { response in
+                if(response.error == nil){
+                    print(response.value.debugDescription);
+                    if(response.value?.status == 200){
+                        saveUserData(loginResponse: response.value!)
+                        globals.isLogin = true
+                    }else{
+                        print(response.value!.message!)
+                        message = response.value!.message!
+                        showToast.toggle()
+                    }
+                    
+//                    let toast = TVOSToast(frame: CGRect(x: 0, y: 0, width: 800, height: 140))
+//                    toast.style.position = TVOSToastPosition.topRight(insets: 20)
+//                    toast.text = "This is regular text"
+//                    print(TVOSToast.presentOnView(toast))
+////                    presentToast(toast)
+//                    showToast.toggle()
+                }else{
+                    print(response.error!.localizedDescription)
+                }
+                
+            }
+    }
+
 }
 
 struct LoginView_Previews: PreviewProvider {
@@ -165,21 +225,4 @@ struct CheckboxToggleStyle: ToggleStyle {
  
         }
     }
-}
-
-
-func login(userName: String, password: String, globals: GlobalString){
-    AF.request("\(baseUrl)signin", method: .post, parameters: ["mobileno": userName,"password": password], encoder: JSONParameterEncoder.json)
-        .responseDecodable(of: LoginResponse.self) { response in
-            if(response.error == nil){
-                print(response.value.debugDescription);
-                saveUserData(loginResponse: response.value!)
-                globals.isLogin = true
-//                ads = response.value!.data
-//                raandomIndexForAds = Int.random(in: 0...ads.count-1)
-            }else{
-                print(response.error!.localizedDescription)
-            }
-            
-        }
 }

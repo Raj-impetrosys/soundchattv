@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct soundchattvApp: App {
     let persistenceController = PersistenceController.shared
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 
     var body: some Scene {
         WindowGroup {

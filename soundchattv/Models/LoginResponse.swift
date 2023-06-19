@@ -9,12 +9,13 @@ import Foundation
 import Alamofire
 
 struct LoginResponse: Codable {
-    let id: Int
-    let username, email, mobileno: String
-    let roles: [JSONAny]
-    let accessToken, fname, lname, country: String
-    let profilepic: String
+    let id: Int?
+    let username, email, mobileno: String?
+    let roles: [JSONAny]?
+    let accessToken, fname, lname, country: String?
+    let profilepic: String?
     let status: Int
+    let message: String?
 }
 
 //func newJSONDecoder() -> JSONDecoder {

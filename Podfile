@@ -9,6 +9,7 @@ target 'soundchattv' do
 pod 'Alamofire'
 #pod 'YouTubePlayerKit'
 pod 'Introspect'
+#pod 'TVOSToast'
 
   target 'soundchattvTests' do
     inherit! :search_paths

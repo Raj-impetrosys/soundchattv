@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB15832146B93306F4EE49B0 /* Pods_soundchattvTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAF6DA016C20F5155CA4596 /* Pods_soundchattvTests.framework */; };
-		BEB33565003EDC20C16A95F3 /* Pods_soundchattv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D28C55AC1437323BA597A63B /* Pods_soundchattv.framework */; };
-		DBB57A880BD7436852B58AB9 /* Pods_soundchattv_soundchattvUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 386209D2BDB951A2465C58E8 /* Pods_soundchattv_soundchattvUITests.framework */; };
+		0759A9373207E417638C59C2 /* Pods_soundchattv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FA1632423A4E7C827C85E6 /* Pods_soundchattv.framework */; };
+		5C1D5889DECE61DD90948DA8 /* Pods_soundchattv_soundchattvUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8EB9365CF1B14C5AB117B6 /* Pods_soundchattv_soundchattvUITests.framework */; };
+		B2A1B796F343059C2BAF359A /* Pods_soundchattvTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA751A3C3E07B30B0CFEF08 /* Pods_soundchattvTests.framework */; };
 		E10838792A175AB200834AEE /* LiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10838782A175AB200834AEE /* LiveView.swift */; };
 		E108387B2A179AF800834AEE /* InterviewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E108387A2A179AF800834AEE /* InterviewsView.swift */; };
 		E108387D2A17B0C300834AEE /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E108387C2A17B0C300834AEE /* VideoPlayerView.swift */; };
 		E133E2B02A2F0CAF0027DF5A /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E133E2AF2A2F0CAF0027DF5A /* UserDefault.swift */; };
 		E133E2B22A2F13320027DF5A /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E133E2B12A2F13320027DF5A /* SettingView.swift */; };
 		E133E2B42A2F13990027DF5A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E133E2B32A2F13990027DF5A /* ProfileView.swift */; };
+		E13A31F32A3CA3C1003A941F /* CollageLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13A31F22A3CA3C1003A941F /* CollageLayoutView.swift */; };
+		E13A31F62A4025A1003A941F /* LikeDislikePostApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13A31F52A4025A1003A941F /* LikeDislikePostApi.swift */; };
 		E1431D612A13B4CE005602AB /* TimelineResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1431D602A13B4CE005602AB /* TimelineResponse.swift */; };
 		E1431D632A14A08C005602AB /* HomesliderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1431D622A14A08C005602AB /* HomesliderResponse.swift */; };
 		E146C94B29FF809200AA3327 /* soundchattvApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E146C94A29FF809200AA3327 /* soundchattvApp.swift */; };
@@ -27,8 +29,13 @@
 		E146C96129FF809400AA3327 /* soundchattvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E146C96029FF809400AA3327 /* soundchattvTests.swift */; };
 		E146C96B29FF809400AA3327 /* soundchattvUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E146C96A29FF809400AA3327 /* soundchattvUITests.swift */; };
 		E146C96D29FF809400AA3327 /* soundchattvUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E146C96C29FF809400AA3327 /* soundchattvUITestsLaunchTests.swift */; };
+		E16689812A3B29D0000CE1BC /* ConerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16689802A3B29D0000CE1BC /* ConerRadius.swift */; };
+		E16689832A3B3A21000CE1BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16689822A3B3A21000CE1BC /* AppDelegate.swift */; };
 		E172F6032A262619006A428F /* RecapTVResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E172F6022A262619006A428F /* RecapTVResponse.swift */; };
 		E172F6052A27687B006A428F /* TimelineStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E172F6042A27687B006A428F /* TimelineStoryView.swift */; };
+		E17882622A334FFA00E66D92 /* DeleteAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17882612A334FFA00E66D92 /* DeleteAccountResponse.swift */; };
+		E17882642A38612400E66D92 /* TimelineDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17882632A38612400E66D92 /* TimelineDetailView.swift */; };
+		E17882662A39E00D00E66D92 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17882652A39E00D00E66D92 /* DateFormatter.swift */; };
 		E188C3E22A1B4EA100A752E0 /* InterviewResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E188C3E12A1B4EA100A752E0 /* InterviewResponse.swift */; };
 		E188C3E42A1C963C00A752E0 /* RecapTVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E188C3E32A1C963C00A752E0 /* RecapTVView.swift */; };
 		E191FC602A14C16700002CF3 /* ScheduleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191FC5F2A14C16700002CF3 /* ScheduleResponse.swift */; };
@@ -39,6 +46,9 @@
 		E198C1B62A12573E00CA655C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E198C1B52A12573E00CA655C /* Constants.swift */; };
 		E1C2D7E92A2A11DE001A3DCA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2D7E82A2A11DE001A3DCA /* LoginView.swift */; };
 		E1C2D7EB2A2DAAF2001A3DCA /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2D7EA2A2DAAF2001A3DCA /* LoginResponse.swift */; };
+		E1E949FE2A31F8B600E58EE9 /* PosterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E949FD2A31F8B600E58EE9 /* PosterView.swift */; };
+		E1E94A002A31FFC500E58EE9 /* Logout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E949FF2A31FFC500E58EE9 /* Logout.swift */; };
+		E1E94A042A33051C00E58EE9 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E94A032A33051C00E58EE9 /* ToastView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,20 +69,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2AAF6DA016C20F5155CA4596 /* Pods_soundchattvTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_soundchattvTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		32F4FC075AF17C642B7E14F0 /* Pods-soundchattv-soundchattvUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soundchattv-soundchattvUITests.debug.xcconfig"; path = "Target Support Files/Pods-soundchattv-soundchattvUITests/Pods-soundchattv-soundchattvUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		386209D2BDB951A2465C58E8 /* Pods_soundchattv_soundchattvUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_soundchattv_soundchattvUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5839532CB50C2CD185D5148A /* Pods-soundchattvTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soundchattvTests.release.xcconfig"; path = "Target Support Files/Pods-soundchattvTests/Pods-soundchattvTests.release.xcconfig"; sourceTree = "<group>"; };
-		738CCCA7E5609610B1585445 /* Pods-soundchattvTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soundchattvTests.debug.xcconfig"; path = "Target Support Files/Pods-soundchattvTests/Pods-soundchattvTests.debug.xcconfig"; sourceTree = "<group>"; };
-		79D826D0138996D5FFA78281 /* Pods-soundchattv-soundchattvUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soundchattv-soundchattvUITests.release.xcconfig"; path = "Target Support Files/Pods-soundchattv-soundchattvUITests/Pods-soundchattv-soundchattvUITests.release.xcconfig"; sourceTree = "<group>"; };
-		D28C55AC1437323BA597A63B /* Pods_soundchattv.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_soundchattv.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5BB1C1553D1921F3E78F6AE /* Pods-soundchattv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soundchattv.debug.xcconfig"; path = "Target Support Files/Pods-soundchattv/Pods-soundchattv.debug.xcconfig"; sourceTree = "<group>"; };
+		129395393B891948AA56BAB6 /* Pods-soundchattv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soundchattv.release.xcconfig"; path = "Target Support Files/Pods-soundchattv/Pods-soundchattv.release.xcconfig"; sourceTree = "<group>"; };
+		1F15734A9EB7FDD5F95573A1 /* Pods-soundchattvTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soundchattvTests.release.xcconfig"; path = "Target Support Files/Pods-soundchattvTests/Pods-soundchattvTests.release.xcconfig"; sourceTree = "<group>"; };
+		1F8EB9365CF1B14C5AB117B6 /* Pods_soundchattv_soundchattvUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_soundchattv_soundchattvUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		247A449A55C96ABFA5E7A12A /* Pods-soundchattv-soundchattvUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soundchattv-soundchattvUITests.debug.xcconfig"; path = "Target Support Files/Pods-soundchattv-soundchattvUITests/Pods-soundchattv-soundchattvUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5978DD8634E412C6430F54CC /* Pods-soundchattvTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soundchattvTests.debug.xcconfig"; path = "Target Support Files/Pods-soundchattvTests/Pods-soundchattvTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6FAF1F16C9606CA0D62EF1A1 /* Pods-soundchattv-soundchattvUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soundchattv-soundchattvUITests.release.xcconfig"; path = "Target Support Files/Pods-soundchattv-soundchattvUITests/Pods-soundchattv-soundchattvUITests.release.xcconfig"; sourceTree = "<group>"; };
+		79FA1632423A4E7C827C85E6 /* Pods_soundchattv.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_soundchattv.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAA751A3C3E07B30B0CFEF08 /* Pods_soundchattvTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_soundchattvTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE71FB6D14F36255003DC29 /* Pods-soundchattv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soundchattv.debug.xcconfig"; path = "Target Support Files/Pods-soundchattv/Pods-soundchattv.debug.xcconfig"; sourceTree = "<group>"; };
 		E10838782A175AB200834AEE /* LiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveView.swift; sourceTree = "<group>"; };
 		E108387A2A179AF800834AEE /* InterviewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewsView.swift; sourceTree = "<group>"; };
 		E108387C2A17B0C300834AEE /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		E133E2AF2A2F0CAF0027DF5A /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
 		E133E2B12A2F13320027DF5A /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		E133E2B32A2F13990027DF5A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E13A31F22A3CA3C1003A941F /* CollageLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageLayoutView.swift; sourceTree = "<group>"; };
+		E13A31F52A4025A1003A941F /* LikeDislikePostApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeDislikePostApi.swift; sourceTree = "<group>"; };
 		E1431D602A13B4CE005602AB /* TimelineResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineResponse.swift; sourceTree = "<group>"; };
 		E1431D622A14A08C005602AB /* HomesliderResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomesliderResponse.swift; sourceTree = "<group>"; };
 		E146C94729FF809200AA3327 /* soundchattv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = soundchattv.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,8 +100,14 @@
 		E146C96629FF809400AA3327 /* soundchattvUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = soundchattvUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E146C96A29FF809400AA3327 /* soundchattvUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soundchattvUITests.swift; sourceTree = "<group>"; };
 		E146C96C29FF809400AA3327 /* soundchattvUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soundchattvUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E16689802A3B29D0000CE1BC /* ConerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConerRadius.swift; sourceTree = "<group>"; };
+		E16689822A3B3A21000CE1BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E172F6022A262619006A428F /* RecapTVResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecapTVResponse.swift; sourceTree = "<group>"; };
 		E172F6042A27687B006A428F /* TimelineStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineStoryView.swift; sourceTree = "<group>"; };
+		E178825D2A3341C900E66D92 /* TVOSToast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TVOSToast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E17882612A334FFA00E66D92 /* DeleteAccountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAccountResponse.swift; sourceTree = "<group>"; };
+		E17882632A38612400E66D92 /* TimelineDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineDetailView.swift; sourceTree = "<group>"; };
+		E17882652A39E00D00E66D92 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		E188C3E12A1B4EA100A752E0 /* InterviewResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewResponse.swift; sourceTree = "<group>"; };
 		E188C3E32A1C963C00A752E0 /* RecapTVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecapTVView.swift; sourceTree = "<group>"; };
 		E191FC5F2A14C16700002CF3 /* ScheduleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleResponse.swift; sourceTree = "<group>"; };
@@ -99,7 +118,9 @@
 		E198C1B52A12573E00CA655C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E1C2D7E82A2A11DE001A3DCA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E1C2D7EA2A2DAAF2001A3DCA /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
-		EE064D54D57E152DFB51D781 /* Pods-soundchattv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soundchattv.release.xcconfig"; path = "Target Support Files/Pods-soundchattv/Pods-soundchattv.release.xcconfig"; sourceTree = "<group>"; };
+		E1E949FD2A31F8B600E58EE9 /* PosterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterView.swift; sourceTree = "<group>"; };
+		E1E949FF2A31FFC500E58EE9 /* Logout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logout.swift; sourceTree = "<group>"; };
+		E1E94A032A33051C00E58EE9 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEB33565003EDC20C16A95F3 /* Pods_soundchattv.framework in Frameworks */,
+				0759A9373207E417638C59C2 /* Pods_soundchattv.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB15832146B93306F4EE49B0 /* Pods_soundchattvTests.framework in Frameworks */,
+				B2A1B796F343059C2BAF359A /* Pods_soundchattvTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,34 +144,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBB57A880BD7436852B58AB9 /* Pods_soundchattv_soundchattvUITests.framework in Frameworks */,
+				5C1D5889DECE61DD90948DA8 /* Pods_soundchattv_soundchattvUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4FEC10DE4287D6A54A6BAB45 /* Frameworks */ = {
+		51F9EB81AFBC99E523895B1D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D28C55AC1437323BA597A63B /* Pods_soundchattv.framework */,
-				386209D2BDB951A2465C58E8 /* Pods_soundchattv_soundchattvUITests.framework */,
-				2AAF6DA016C20F5155CA4596 /* Pods_soundchattvTests.framework */,
+				CFE71FB6D14F36255003DC29 /* Pods-soundchattv.debug.xcconfig */,
+				129395393B891948AA56BAB6 /* Pods-soundchattv.release.xcconfig */,
+				247A449A55C96ABFA5E7A12A /* Pods-soundchattv-soundchattvUITests.debug.xcconfig */,
+				6FAF1F16C9606CA0D62EF1A1 /* Pods-soundchattv-soundchattvUITests.release.xcconfig */,
+				5978DD8634E412C6430F54CC /* Pods-soundchattvTests.debug.xcconfig */,
+				1F15734A9EB7FDD5F95573A1 /* Pods-soundchattvTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7FB620C1586FE9E17DE94BAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E178825D2A3341C900E66D92 /* TVOSToast.framework */,
+				79FA1632423A4E7C827C85E6 /* Pods_soundchattv.framework */,
+				1F8EB9365CF1B14C5AB117B6 /* Pods_soundchattv_soundchattvUITests.framework */,
+				BAA751A3C3E07B30B0CFEF08 /* Pods_soundchattvTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		51F9EB81AFBC99E523895B1D /* Pods */ = {
+		E13A31F42A402578003A941F /* Apis */ = {
 			isa = PBXGroup;
 			children = (
-				D5BB1C1553D1921F3E78F6AE /* Pods-soundchattv.debug.xcconfig */,
-				EE064D54D57E152DFB51D781 /* Pods-soundchattv.release.xcconfig */,
-				32F4FC075AF17C642B7E14F0 /* Pods-soundchattv-soundchattvUITests.debug.xcconfig */,
-				79D826D0138996D5FFA78281 /* Pods-soundchattv-soundchattvUITests.release.xcconfig */,
-				738CCCA7E5609610B1585445 /* Pods-soundchattvTests.debug.xcconfig */,
-				5839532CB50C2CD185D5148A /* Pods-soundchattvTests.release.xcconfig */,
+				E13A31F52A4025A1003A941F /* LikeDislikePostApi.swift */,
 			);
-			path = Pods;
+			path = Apis;
 			sourceTree = "<group>";
 		};
 		E1431D5F2A13B4BE005602AB /* Models */ = {
@@ -162,6 +192,7 @@
 				E188C3E12A1B4EA100A752E0 /* InterviewResponse.swift */,
 				E172F6022A262619006A428F /* RecapTVResponse.swift */,
 				E1C2D7EA2A2DAAF2001A3DCA /* LoginResponse.swift */,
+				E17882612A334FFA00E66D92 /* DeleteAccountResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -174,7 +205,7 @@
 				E146C96929FF809400AA3327 /* soundchattvUITests */,
 				E146C94829FF809200AA3327 /* Products */,
 				51F9EB81AFBC99E523895B1D /* Pods */,
-				4FEC10DE4287D6A54A6BAB45 /* Frameworks */,
+				7FB620C1586FE9E17DE94BAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -191,6 +222,8 @@
 		E146C94929FF809200AA3327 /* soundchattv */ = {
 			isa = PBXGroup;
 			children = (
+				E13A31F42A402578003A941F /* Apis */,
+				E166897F2A3B29A4000CE1BC /* Extensions */,
 				E146C94A29FF809200AA3327 /* soundchattvApp.swift */,
 				E146C94C29FF809200AA3327 /* ContentView.swift */,
 				E1811C022A16567700F86C93 /* Views */,
@@ -201,6 +234,7 @@
 				E146C95329FF809400AA3327 /* Persistence.swift */,
 				E146C95529FF809400AA3327 /* soundchattv.xcdatamodeld */,
 				E146C95029FF809400AA3327 /* Preview Content */,
+				E16689822A3B3A21000CE1BC /* AppDelegate.swift */,
 			);
 			path = soundchattv;
 			sourceTree = "<group>";
@@ -230,6 +264,14 @@
 			path = soundchattvUITests;
 			sourceTree = "<group>";
 		};
+		E166897F2A3B29A4000CE1BC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E16689802A3B29D0000CE1BC /* ConerRadius.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		E1811C022A16567700F86C93 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,9 +282,13 @@
 				E194D1502A1F334D003B1715 /* YoutubePlayerView.swift */,
 				E188C3E32A1C963C00A752E0 /* RecapTVView.swift */,
 				E172F6042A27687B006A428F /* TimelineStoryView.swift */,
+				E17882632A38612400E66D92 /* TimelineDetailView.swift */,
+				E13A31F22A3CA3C1003A941F /* CollageLayoutView.swift */,
 				E1C2D7E82A2A11DE001A3DCA /* LoginView.swift */,
+				E1E94A032A33051C00E58EE9 /* ToastView.swift */,
 				E133E2B32A2F13990027DF5A /* ProfileView.swift */,
 				E133E2B12A2F13320027DF5A /* SettingView.swift */,
+				E1E949FD2A31F8B600E58EE9 /* PosterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -251,8 +297,10 @@
 			isa = PBXGroup;
 			children = (
 				E198C1B22A12506600CA655C /* AsyncImage.swift */,
+				E17882652A39E00D00E66D92 /* DateFormatter.swift */,
 				E133E2AF2A2F0CAF0027DF5A /* UserDefault.swift */,
 				E191FC612A14E30C00002CF3 /* GetDetroitTime.swift */,
+				E1E949FF2A31FFC500E58EE9 /* Logout.swift */,
 			);
 			path = Functions;
 			sourceTree = "<group>";
@@ -272,11 +320,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E146C97029FF809400AA3327 /* Build configuration list for PBXNativeTarget "soundchattv" */;
 			buildPhases = (
-				D2B042D8ACC2BE50CA59FF0A /* [CP] Check Pods Manifest.lock */,
+				A02D71D8DA10958B2B46F498 /* [CP] Check Pods Manifest.lock */,
 				E146C94329FF809200AA3327 /* Sources */,
 				E146C94429FF809200AA3327 /* Frameworks */,
 				E146C94529FF809200AA3327 /* Resources */,
-				DB87A15EA13965D816A2AE0A /* [CP] Embed Pods Frameworks */,
+				2A885E1F8EC3297253AB67B1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -291,7 +339,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E146C97329FF809400AA3327 /* Build configuration list for PBXNativeTarget "soundchattvTests" */;
 			buildPhases = (
-				DF3744828FBFB4B95A3A6C8F /* [CP] Check Pods Manifest.lock */,
+				17FF02A87349A8A29B00A671 /* [CP] Check Pods Manifest.lock */,
 				E146C95829FF809400AA3327 /* Sources */,
 				E146C95929FF809400AA3327 /* Frameworks */,
 				E146C95A29FF809400AA3327 /* Resources */,
@@ -310,11 +358,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E146C97629FF809400AA3327 /* Build configuration list for PBXNativeTarget "soundchattvUITests" */;
 			buildPhases = (
-				60007EFE5025A8ACA1E0CDE4 /* [CP] Check Pods Manifest.lock */,
+				14E039AFD8758F63548CD050 /* [CP] Check Pods Manifest.lock */,
 				E146C96229FF809400AA3327 /* Sources */,
 				E146C96329FF809400AA3327 /* Frameworks */,
 				E146C96429FF809400AA3327 /* Resources */,
-				8977B6A0EA51E03AA7C49734 /* [CP] Embed Pods Frameworks */,
+				5AAC8775C46F1176D3A56EE0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -396,7 +444,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		60007EFE5025A8ACA1E0CDE4 /* [CP] Check Pods Manifest.lock */ = {
+		14E039AFD8758F63548CD050 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -418,63 +466,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8977B6A0EA51E03AA7C49734 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-soundchattv-soundchattvUITests/Pods-soundchattv-soundchattvUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-soundchattv-soundchattvUITests/Pods-soundchattv-soundchattvUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-soundchattv-soundchattvUITests/Pods-soundchattv-soundchattvUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D2B042D8ACC2BE50CA59FF0A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-soundchattv-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DB87A15EA13965D816A2AE0A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-soundchattv/Pods-soundchattv-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-soundchattv/Pods-soundchattv-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-soundchattv/Pods-soundchattv-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DF3744828FBFB4B95A3A6C8F /* [CP] Check Pods Manifest.lock */ = {
+		17FF02A87349A8A29B00A671 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -496,6 +488,62 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2A885E1F8EC3297253AB67B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-soundchattv/Pods-soundchattv-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-soundchattv/Pods-soundchattv-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-soundchattv/Pods-soundchattv-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AAC8775C46F1176D3A56EE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-soundchattv-soundchattvUITests/Pods-soundchattv-soundchattvUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-soundchattv-soundchattvUITests/Pods-soundchattv-soundchattvUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-soundchattv-soundchattvUITests/Pods-soundchattv-soundchattvUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A02D71D8DA10958B2B46F498 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-soundchattv-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -508,23 +556,33 @@
 				E172F6032A262619006A428F /* RecapTVResponse.swift in Sources */,
 				E198C1B32A12506600CA655C /* AsyncImage.swift in Sources */,
 				E133E2B22A2F13320027DF5A /* SettingView.swift in Sources */,
+				E1E94A002A31FFC500E58EE9 /* Logout.swift in Sources */,
 				E146C95429FF809400AA3327 /* Persistence.swift in Sources */,
 				E108387B2A179AF800834AEE /* InterviewsView.swift in Sources */,
+				E16689832A3B3A21000CE1BC /* AppDelegate.swift in Sources */,
 				E146C94D29FF809200AA3327 /* ContentView.swift in Sources */,
 				E146C94B29FF809200AA3327 /* soundchattvApp.swift in Sources */,
+				E16689812A3B29D0000CE1BC /* ConerRadius.swift in Sources */,
 				E1431D612A13B4CE005602AB /* TimelineResponse.swift in Sources */,
 				E191FC622A14E30C00002CF3 /* GetDetroitTime.swift in Sources */,
 				E10838792A175AB200834AEE /* LiveView.swift in Sources */,
 				E191FC602A14C16700002CF3 /* ScheduleResponse.swift in Sources */,
 				E172F6052A27687B006A428F /* TimelineStoryView.swift in Sources */,
 				E146C95729FF809400AA3327 /* soundchattv.xcdatamodeld in Sources */,
+				E1E94A042A33051C00E58EE9 /* ToastView.swift in Sources */,
+				E17882622A334FFA00E66D92 /* DeleteAccountResponse.swift in Sources */,
+				E1E949FE2A31F8B600E58EE9 /* PosterView.swift in Sources */,
 				E133E2B02A2F0CAF0027DF5A /* UserDefault.swift in Sources */,
 				E133E2B42A2F13990027DF5A /* ProfileView.swift in Sources */,
 				E188C3E22A1B4EA100A752E0 /* InterviewResponse.swift in Sources */,
+				E17882642A38612400E66D92 /* TimelineDetailView.swift in Sources */,
 				E1431D632A14A08C005602AB /* HomesliderResponse.swift in Sources */,
+				E17882662A39E00D00E66D92 /* DateFormatter.swift in Sources */,
+				E13A31F32A3CA3C1003A941F /* CollageLayoutView.swift in Sources */,
 				E194D1512A1F334D003B1715 /* YoutubePlayerView.swift in Sources */,
 				E108387D2A17B0C300834AEE /* VideoPlayerView.swift in Sources */,
 				E1C2D7E92A2A11DE001A3DCA /* LoginView.swift in Sources */,
+				E13A31F62A4025A1003A941F /* LikeDislikePostApi.swift in Sources */,
 				E198C1B62A12573E00CA655C /* Constants.swift in Sources */,
 				E1C2D7EB2A2DAAF2001A3DCA /* LoginResponse.swift in Sources */,
 			);
@@ -679,7 +737,7 @@
 		};
 		E146C97129FF809400AA3327 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5BB1C1553D1921F3E78F6AE /* Pods-soundchattv.debug.xcconfig */;
+			baseConfigurationReference = CFE71FB6D14F36255003DC29 /* Pods-soundchattv.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -705,7 +763,7 @@
 		};
 		E146C97229FF809400AA3327 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE064D54D57E152DFB51D781 /* Pods-soundchattv.release.xcconfig */;
+			baseConfigurationReference = 129395393B891948AA56BAB6 /* Pods-soundchattv.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -731,7 +789,7 @@
 		};
 		E146C97429FF809400AA3327 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 738CCCA7E5609610B1585445 /* Pods-soundchattvTests.debug.xcconfig */;
+			baseConfigurationReference = 5978DD8634E412C6430F54CC /* Pods-soundchattvTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -751,7 +809,7 @@
 		};
 		E146C97529FF809400AA3327 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5839532CB50C2CD185D5148A /* Pods-soundchattvTests.release.xcconfig */;
+			baseConfigurationReference = 1F15734A9EB7FDD5F95573A1 /* Pods-soundchattvTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -771,7 +829,7 @@
 		};
 		E146C97729FF809400AA3327 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32F4FC075AF17C642B7E14F0 /* Pods-soundchattv-soundchattvUITests.debug.xcconfig */;
+			baseConfigurationReference = 247A449A55C96ABFA5E7A12A /* Pods-soundchattv-soundchattvUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -789,7 +847,7 @@
 		};
 		E146C97829FF809400AA3327 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79D826D0138996D5FFA78281 /* Pods-soundchattv-soundchattvUITests.release.xcconfig */;
+			baseConfigurationReference = 6FAF1F16C9606CA0D62EF1A1 /* Pods-soundchattv-soundchattvUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -69,6 +69,7 @@ struct InterviewsView: View {
 
 struct HorizontalList : View{
     let events: [Event]?
+    @State var currentInterview: Event?
     let heading: String
     var body: some View{
         VStack{
@@ -76,30 +77,13 @@ struct HorizontalList : View{
             ScrollView(.horizontal){
                 HStack{
                     ForEach(events ?? [], id: \.id){event in
-                        PosterView(event: event, interviews: events ?? [])
+                        PosterView(
+                            isFromDetailScreen: false,
+                            currentInterview: $currentInterview,
+                            event: event, interviews: events ?? [])
                     }
                 }
             }
-        }
-    }
-}
-
-
-struct PosterView : View{
-    let event: Event
-    let interviews: [Event]
-    var body: some View{
-        ZStack{
-        NavigationLink{
-            InterviewDetailView(interviews: interviews, event: event)
-        }label: {
-            NetworkImage(urlString:baseurlimageinetrviews + event.featureImg).frame(width: 250, height: 250).overlay {
-                LinearGradient(colors: [.black, .black.opacity(0)], startPoint: .bottom, endPoint: .top)
-            }.cornerRadius(20)
-        }.cornerRadius(20).buttonStyle(.plain)
-            Text(event.postTitle).lineLimit(2)
-//                                .background(Color.black.opacity(0.5))
-                .multilineTextAlignment(.center).frame(width: 250, height: 250, alignment: .bottom)
         }
     }
 }

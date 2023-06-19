@@ -10,13 +10,17 @@ import SwiftUI
 
 struct NetworkImage: View {
     var urlString: String
+    let contentMode: ContentMode = .fit
     var body: some View {
         AsyncImage(
             url: URL(string: urlString),
             content: { image in
                 image
                     .resizable()
-                    .aspectRatio(contentMode: .fill)
+//                    .scaledToFit()
+                    .scaledToFill()
+//                    .aspectRatio(contentMode: contentMode)
+                    .clipped()
             }, placeholder: {
                 ProgressView()
                     .progressViewStyle(CircularProgressViewStyle(tint: .blue))

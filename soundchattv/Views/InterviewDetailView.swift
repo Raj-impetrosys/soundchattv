@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct InterviewDetailView: View {
+    @State private var isFocused: Bool = false
     let interviews: [Event]
 //    let event: Event
 //    @State private var interviews: Interviews?
@@ -47,16 +48,27 @@ struct InterviewDetailView: View {
         ScrollView(.horizontal){
             HStack{
                 ForEach(interviews, id: \.id){event in
-                    PosterView(event: event, interviews: interviews)
-                        .onTapGesture {
-                            navigate.toggle()
-                            print("tapped")
-                        }
-                        .focusable(true, onFocusChange: { isFocused in
-                        if(isFocused){
-                            currentInterview = event
-                        }
-                    })
+                    PosterView(
+                        isFromDetailScreen: true,
+                        currentInterview: $currentInterview,
+                        event: event, interviews: interviews)
+//                        .focusable(true, onFocusChange: { newState in
+//                            isFocused = newState
+//                        if(isFocused){
+//                            currentInterview = event
+//                        }
+//                    })
+//                        .scaleEffect(isFocused ? 1.2 : 1)
+//                                    .animation(.easeInOut, value: isFocused)
+//                                    .overlay {
+//                                        if(isFocused){RoundedRectangle(cornerRadius: 20).opacity(0.2)}
+//                                    }
+                    
+//                        .onTapGesture {
+//                            navigate.toggle()
+//                            print("tapped")
+//                        }
+
                 }
             }
         }
